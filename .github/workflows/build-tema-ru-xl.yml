@@ -39,6 +39,8 @@ jobs:
           cd bruce
           python3 tema_patch.py
           python3 translation_audit.py > localization-audit.txt
+          # Disable problematic LTO for ESP32-S3
+          sed -i '/^[[:space:]]*-flto[[:space:]]*$/d; /-Werror=odr/d; /flto_prep.py/d' platformio.ini
 
       - name: Build COMPLETE image (no Lite) for LilyGO T-Embed CC1101
         working-directory: bruce
