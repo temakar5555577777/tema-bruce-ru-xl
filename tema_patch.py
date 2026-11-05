@@ -309,8 +309,55 @@ def replace_once(body, old, new, label):
     return body.replace(old, new, 1)
 
 
+
+def fix_fastled_fp_collision():
+    import re
+    from pathlib import Path
+
+    root = Path.cwd()
+    folders = [
+        root / "src",
+        root / "include",
+        root / "boards",
+        root / "lib" / "HAL",
+    ]
+
+    count = 0
+    for folder in folders:
+        if not folder.exists():
+            continue
+        for f in folder.rglob("*"):
+            if not f.is_file():
+                continue
+            if f.suffix not in (".h", ".hpp", ".cpp", ".c", ".ino"):
+                continue
+            old = f.read_text(
+                encoding="utf-8",
+                errors="surrogateescape"
+            )
+            new = re.sub(
+                r"\bFP\b",
+                "BRUCE_FONT_SMALL",
+                old
+            )
+            if new != old:
+                f.write_text(
+                    new,
+                    encoding="utf-8",
+                    errors="surrogateescape"
+                )
+                count += 1
+
+    pins = root / "boards/lilygo-t-embed-cc1101/pins_arduino.h"
+    if "#define BRUCE_FONT_SMALL 1" not in pins.read_text():
+        raise RuntimeError("Font macro patch failed")
+
+    print("FastLED FP fix applied:", count)
+
+
 def patch():
     load_extra_dictionary()
+    fix_fastled_fp_collision()
     if not SOURCE.is_file() or not BOARD.is_file():
         raise SystemExit('Run this script inside the BruceDevices/firmware source checkout')
     src = SOURCE.read_text()
