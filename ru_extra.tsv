@@ -1,0 +1,330 @@
+# Дополнительный словарь отображаемых надписей Bruce. Формат: English<TAB>Русский
+Connect to Wifi	Подключение Wi-Fi
+Start WiFi AP	Создать точку Wi-Fi
+Turn Off WiFi	Выключить Wi-Fi
+AP info	Данные точки Wi-Fi
+Wifi Atks	Wi-Fi: проверки
+WiFi Atks	Wi-Fi: проверки
+Evil Portal	Портал Wi-Fi
+NetCut	Контроль сети
+ReverseShell	Удалённая консоль
+Listen TCP	Слушать TCP
+Client TCP	Клиент TCP
+SOCKS4 Proxy	Прокси SOCKS4
+TelNET	Telnet
+SSH	SSH
+Wireguard	WireGuard
+Responder	Responder
+Brucegotchi	Brucegotchi
+WiFi Pass Recovery	Восстановление Wi-Fi
+Change MAC	Изменить MAC
+Add Evil Wifi	Добавить сеть
+Remove Evil Wifi	Удалить сеть
+Evil Wifi Settings	Настройки Wi-Fi
+Set Gateway IP	IP шлюза
+Password Mode	Режим пароля
+Display endpoints	Показать адреса
+Hidden Networks:	Скрытые сети:
+WiFi Config	Настройки Wi-Fi
+Config	Настройки
+Media Cmds	Медиакнопки
+BLE Scan	Сканировать BLE
+iBeacon	Маяк iBeacon
+Bad BLE	BLE: сценарии
+BLE Keyboard	BLE-клавиатура
+BLE Spam	BLE-рассылка
+BLE Suite	Набор BLE
+Ninebot	Ninebot
+Presenter mode	Режим презентации
+BLE Sniffer	Анализатор BLE
+Record RAW	Записать RAW
+RSSI Spectrum	Спектр RSSI
+SquareWave Spec	Прямоуг. спектр
+Spectogram	Спектрограмма
+Listen	Прослушивание
+Bruteforce	Перебор кодов
+Jammer	Помехи
+Radio Frequency	Радиочастота
+RF TX Pin	Вывод передачи RF
+RF RX Pin	Вывод приёма RF
+RF Module	Модуль RF
+RF Frequency	Частота RF
+RF Config	Настройки RF
+Read EMV	Считать EMV
+Scan tags	Поиск меток
+Emulate NDEF	Эмуляция NDEF
+Write NDEF	Записать NDEF
+Amiibolink	Amiibolink
+Chameleon	Chameleon
+PN532 BLE	PN532 Bluetooth
+PN532 UART	PN532 UART
+SRIX Tool	Инструмент SRIX
+Add MIF Key	Добавить ключ MIF
+RFID Config	Настройки RFID
+RFID Module	Модуль RFID
+IR Read	Считать ИК
+IR Jammer	ИК-помехи
+Infrared	Инфракрасный
+Ir TX Pin	Вывод передачи ИК
+Ir RX Pin	Вывод приёма ИК
+Ir TX Repeats	Повторы передачи ИК
+IR Config	Настройки ИК
+Display & UI	Экран и интерфейс
+LED Config	Настройки подсветки
+Audio Config	Настройки звука
+System Config	Настройки системы
+Power	Питание
+Install App Store	Магазин приложений
+Dev Mode	Режим разработчика
+LED Color	Цвет светодиодов
+LED Effect	Эффект подсветки
+LED Brightness	Яркость светодиодов
+LED Blink:	Мигание LED:
+Sound:	Звук:
+Sound Volume	Громкость
+InstaBoot:	Быстрый запуск:
+WiFi Startup:	Wi-Fi при запуске:
+Startup App	Приложение запуска
+Keyboard Language:	Язык клавиатуры:
+Advanced	Дополнительно
+Set Device pins	Настроить выводы
+Toggle BLE API	Вкл/выкл BLE API
+BLE name	Имя BLE
+BLE device name	Имя устройства BLE
+Network Creds	Данные сетей
+Factory Reset	Сброс настроек
+Deep Sleep	Глубокий сон
+Power Off Device?	Выключить устройство?
+Power Menu	Управление питанием
+Serial use USB	Последовательный USB
+Serial use UART	Последовательный UART
+Disable DevMode	Выключить режим разработчика
+I2C Finder	Поиск устройств I2C
+CC1101 Pins	Контакты CC1101
+NRF24  Pins	Контакты NRF24
+LoRa Pins	Контакты LoRa
+ST25R3916 Pins	Контакты ST25R3916
+W5500 Pins	Контакты W5500
+SDCard Pins	Контакты SD-карты
+I2C Pins	Контакты I2C
+UART Pins	Контакты UART
+GPS Pins	Контакты GPS
+Pins Setup	Настройка выводов
+Connect	Подключить
+Recv File	Получить файл
+Send Cmds	Отправить команды
+Recv Cmds	Получить команды
+Mass Storage	USB-накопитель
+QRCodes	QR-коды
+Megalodon	Megalodon
+Microphone	Микрофон
+BadUSB & HID	USB-клавиатура и HID
+iButton	Ключ iButton
+BadUSB	BadUSB
+USB Clicker	USB-кликер
+USB U2F	Ключ U2F
+Record	Запись
+Timer	Таймер
+Back to Clock	К часам
+Information	Информация
+MouseJack	MouseJack
+NRF Jammer	NRF: помехи
+Config pins	Настроить контакты
+NRF24 (legacy)	NRF24 (старый)
+NRF24 (shared SPI)	NRF24 (общий SPI)
+Wardriving	Карта сетей
+GPS Tracker	GPS-трекер
+Scan WiFi Networks	Поиск сетей Wi-Fi
+Scan BLE Devices	Поиск Bluetooth
+Scan Both	Искать оба типа
+Baudrate	Скорость порта
+GPS Config	Настройки GPS
+W5500 not found	Модуль W5500 не найден
+Scan Hosts	Поиск устройств
+DHCP Starvation	Проверка DHCP
+MAC Flooding	Переполнение MAC
+Ethernet	Ethernet
+Chat	Чат
+Change username	Изменить имя
+Change Frequency	Изменить частоту
+Brdcast std	FM: обычная передача
+Brdcast rsvd	FM: резервная
+Brdcast stop	Остановить FM
+FM Spectrum	FM-спектр
+Hijack TA	FM: дорожные сообщения
+Scan/Copy	Сканирование / копия
+Custom SubGhz	Свои сигналы Sub-GHz
+Radio	Радио
+Broadcast standard	Обычное FM-вещание
+Broadcast reserved	Резервное FM-вещание
+Broadcast stop	Выключить FM
+File Info	Информация о файле
+Wigle Upload	Отправить в WiGLE
+Play Audio	Воспроизвести аудио
+View File	Просмотреть файл
+View image (jpg)	Просмотреть JPG
+SDCard Mngr	Файлы на SD
+Spiffs Mngr	Файлы SPIFFS
+Server Structure	Структура сервера
+Html	HTML
+Brightness	Яркость
+Dim Time	Задержка затемнения
+Orientation	Поворот экрана
+UI Color	Цвет интерфейса
+UI Theme	Тема оформления
+Boot Sound on/off	Звук при запуске
+RTC Support	Часы RTC
+NTP time adjust	Синхронизация NTP
+Manual adjust	Настройка вручную
+Bluetooth	Блютуз
+WiFi	Wi-Fi
+Wifi	Wi-Fi
+Scan	Поиск
+Scan Hosts	Поиск устройств
+Connected	Подключено
+Connecting...	Подключение...
+Disconnected	Отключено
+Connection failed	Ошибка подключения
+Connection Lost	Соединение потеряно
+Failed	Ошибка
+Success	Успешно
+Error	Ошибка
+Warning	Предупреждение
+Status	Состояние
+Ready	Готово
+Done	Готово
+Please wait	Подождите
+Wait	Ожидание
+Loading...	Загрузка...
+Saving...	Сохранение...
+Scanning...	Поиск...
+Searching...	Поиск...
+Starting...	Запуск...
+Stopping...	Остановка...
+Rebooting...	Перезагрузка...
+Exit	Выход
+Cancel	Отмена
+Confirm	Подтвердить
+Retry	Повторить
+Next	Далее
+Previous	Назад
+Up	Вверх
+Down	Вниз
+Left	Влево
+Right	Вправо
+Close	Закрыть
+Edit	Изменить
+New	Новый
+Create	Создать
+Delete File	Удалить файл
+Delete Folder	Удалить папку
+Delete All	Удалить всё
+Upload	Загрузить
+Download	Скачать
+Refresh	Обновить
+Update	Обновить
+Reset	Сбросить
+Factory reset	Заводской сброс
+File not found	Файл не найден
+Not found	Не найдено
+No files found	Файлы не найдены
+No SD Card	Нет карты SD
+SD card not found	Карта SD не найдена
+Mount SD	Подключить SD
+Unmount SD	Отключить SD
+Storage	Память
+Internal memory	Внутренняя память
+Free Space	Свободное место
+Total Space	Всего памяти
+Size	Размер
+Name	Имя
+Path	Путь
+Folder	Папка
+Directory	Каталог
+Filename	Имя файла
+Frequency	Частота
+Modulation	Модуляция
+Signal	Сигнал
+Signal Strength	Уровень сигнала
+Transmit	Передать
+Receive	Принять
+Record	Записать
+Capture	Захватить
+Copy	Копировать
+Paste	Вставить
+Replay	Повторить
+Listen	Прослушивать
+Stop	Остановить
+Start	Запустить
+Delay	Задержка
+Duration	Длительность
+Repeat	Повторить
+Timeout	Время ожидания
+Channel	Канал
+Channels	Каналы
+Networks	Сети
+Devices	Устройства
+Device	Устройство
+Address	Адрес
+Protocol	Протокол
+Mode	Режим
+Power	Питание
+Volume	Громкость
+Contrast	Контрастность
+Language	Язык
+Keyboard	Клавиатура
+Display	Экран
+Settings	Настройки
+System	Система
+General	Основные
+Appearance	Оформление
+Security	Безопасность
+Password	Пароль
+Username	Имя пользователя
+Credentials	Данные доступа
+WiFi SSID	Имя Wi-Fi
+Access Point	Точка доступа
+Web Server	Веб-сервер
+Client	Клиент
+Server	Сервер
+Bluetooth Scan	Поиск Bluetooth
+Beacon	Радиомаяк
+NFC Tools	Инструменты NFC
+RFID Tools	Инструменты RFID
+Frequency Analyzer	Анализатор частот
+Spectrum Analyzer	Анализатор спектра
+Infrared Remote	ИК-пульт
+Remote Control	Пульт управления
+USB Serial	USB-порт
+Serial Monitor	Монитор порта
+Scripts	Скрипты
+Run Script	Запустить скрипт
+Stop Script	Остановить скрипт
+JS Interpreter	Интерпретатор JS
+Interpreter	Интерпретатор
+Last Used	Недавние
+Favorites	Избранное
+Help	Справка
+About	О прошивке
+Version	Версия
+Credits	Разработчики
+License	Лицензия
+Memory	Память
+Battery	Батарея
+Battery Level	Заряд батареи
+Temperature	Температура
+Date	Дата
+Time	Время
+Timezone	Часовой пояс
+Clock	Часы
+Alarm	Будильник
+Timer	Таймер
+Stopwatch	Секундомер
+Exit to Menu	Вернуться в меню
+Return to Menu	В главное меню
+Main Menu	Главное меню
+Home	Главная
+Open	Открыть
+Select	Выбрать
+Options	Параметры
+Menu	Меню

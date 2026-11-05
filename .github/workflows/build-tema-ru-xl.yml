@@ -1,0 +1,62 @@
+name: TEMA Bruce RU XL 2.0 - T-Embed CC1101
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tema_patch.py'
+      - 'ru_extra.tsv'
+      - 'translation_audit.py'
+      - '.github/workflows/build-tema-ru-xl.yml'
+
+jobs:
+  build-full-firmware:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout TEMA modifications
+        uses: actions/checkout@v4
+
+      - name: Get official Bruce sources at a verified revision
+        run: |
+          git clone --depth 1 https://github.com/BruceDevices/firmware.git bruce
+          cd bruce
+          git fetch --depth 1 origin a59213f3ec6cd302fa32c2042b2700c9c24d991a
+          git checkout --detach a59213f3ec6cd302fa32c2042b2700c9c24d991a
+          echo "Bruce source:" && git rev-parse HEAD
+
+      - name: Setup build environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends gcc-multilib libc6-dev-i386 fonts-dejavu-core
+          python3 -m pip install --break-system-packages platformio pillow requests esptool intelhex
+
+      - name: Patch Russian UI and generate Cyrillic bitmap glyphs
+        run: |
+          cp tema_patch.py ru_extra.tsv translation_audit.py bruce/
+          cd bruce
+          python3 tema_patch.py
+          python3 translation_audit.py > localization-audit.txt
+
+      - name: Build COMPLETE image (no Lite) for LilyGO T-Embed CC1101
+        working-directory: bruce
+        run: |
+          set -o pipefail
+          pio run -e lilygo-t-embed-cc1101 -t build-firmware 2>&1 | tee build.log
+          ls -lh Bruce-*.bin
+          sha256sum Bruce-*.bin > SHA256SUMS.txt
+
+      - name: Publish firmware and audit
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TEMA-Bruce-RU-XL-TEmbed-CC1101
+          path: |
+            bruce/Bruce-*.bin
+            bruce/SHA256SUMS.txt
+            bruce/localization-audit.txt
+            bruce/build.log
+          retention-days: 30
+          if-no-files-found: error
